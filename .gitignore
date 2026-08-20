@@ -1,0 +1,30 @@
+# Python 暫存檔
+__pycache__/
+*.py[cod]
+
+# Synology NAS 暫存檔
+Thumbs.db
+@eaDir/
+
+# 虛擬環境 (5.9G)
+deepfake_env/
+
+# 原始影片與人臉資料集 (2.8G，來自 FaceForensics++，不可散布)
+ffpp_videos/
+dataset_faces/
+
+# 模型權重與大型張量檔
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# 口試/報告個人檔案 (614M，含個人識別資訊)
+REPORT/
+
+# 例外：學到的 universal perturbation 是本專案核心產物 (603K)
+!universal_noise_dino.pt
+
+# 含個人資訊與未發表數據，不公開
+make_ppt.py
+test.py
